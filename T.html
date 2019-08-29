@@ -1,0 +1,69 @@
+<html>
+	<head>
+	</head>
+
+	<body bgcolor="#CCFFFF">
+	
+		<table border="4" bordercolor="black" bgcolor="33FFCC">
+		<tr>
+			<td>
+				<pre>
+//inheritance
+
+class employee{
+	int eno;
+	String ename;
+	
+	void setBasicData(int x,String y){
+		eno=x;
+		ename=y;
+		System.out.println(x);
+		System.out.println(y);
+	}
+}
+
+class cemployee extends employee{
+	
+	int wh,ch;
+	
+	void setPaymentData(int a,int b){
+		wh=a;
+		ch=b;
+	}
+	
+	int findPayment(){
+	
+		int payment=wh*ch;
+		System.out.println("payment is "+payment);
+		return payment;
+	}
+	
+}
+
+class T{
+	public static void main(String args[]){
+		
+		cemployee c=new cemployee();
+		c.setBasicData(1,"sunil");
+		c.setPaymentData(5,4);
+		c.findPayment();
+		
+		
+	}
+}
+				</pre>
+			</td>
+		
+		</tr>
+		</table>
+
+		<br><br><br>
+		<h3>Output</h3><br><br>
+		
+		<img src="image/T.jpg" >
+		
+		
+		
+	</body>
+
+</html>

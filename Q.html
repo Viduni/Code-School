@@ -1,0 +1,61 @@
+<html>
+	<head>
+	</head>
+
+	<body background="image/..jpg">
+		
+	
+		<table border="4" bordercolor="black" bgcolor="" cellspacing="5">
+		<tr>
+			
+			<td>
+				<pre>
+
+
+&nbsp &nbsp class item{
+	double ino,iprice,qnt,total;
+	
+	item(double x,double y,double z){
+		ino=x;
+		iprice=y;
+		qnt=z;
+	}
+	
+	void findValue(){
+		total=iprice*qnt;
+		display();
+		
+	}
+	
+	void display(){
+		System.out.println("item no is : "+ino);
+		System.out.println("total is   : "+total);
+	}
+&nbsp &nbsp }
+
+
+	class Q{
+		public static void main(String args[]){
+		
+			item a=new item(1,2,3);
+			a.findValue();
+		
+		
+	}
+&nbsp &nbsp}
+				</pre>
+			</td>
+		
+		</tr>
+		</table>
+
+		<br><br><br>
+		<h3>&nbsp &nbsp &nbsp &nbsp Output</h3><br>
+		
+		&nbsp &nbsp &nbsp &nbsp<img src="image/Q.jpg" >
+		<br><br><br><br><hr>
+		
+		
+	</body>
+
+</html>

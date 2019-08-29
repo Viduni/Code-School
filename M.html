@@ -1,0 +1,59 @@
+<html>
+	<head>
+	</head>
+
+	<body bgcolor="#CCFFFF">
+	
+		<table border="4" bordercolor="black" bgcolor="33FFCC">
+		<tr>
+			<td>
+				<pre>
+//constructors
+
+class bill{
+	int price,qnt;
+	
+	bill(int x,int y){
+		price=x;
+		qnt=y;
+	}
+	
+	int finBill(){
+		int amt=qnt*price;
+		return amt;
+	}
+	
+	void display(int p){
+		
+		System.out.println();
+		System.out.println(p);
+	}
+}
+
+class M{
+	public static void main(String args[]){
+		
+		bill a=new bill(2,5);
+		//a.setBill(2,5);
+		int p=a.finBill();
+		a.display(p);
+		
+		
+	}
+}
+				</pre>
+			</td>
+		
+		</tr>
+		</table>
+
+		<br><br><br>
+		<h3>Output</h3><br><br>
+		
+		<img src="image/M.jpg" >
+		
+		
+		
+	</body>
+
+</html>

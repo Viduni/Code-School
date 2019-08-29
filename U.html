@@ -1,0 +1,61 @@
+<html>
+	<head>
+	</head>
+
+	<body bgcolor="#CCFFFF">
+	
+		<table border="4" bordercolor="black" bgcolor="33FFCC">
+		<tr>
+			<td>
+				<pre>
+//super key word
+
+class books{
+	int id;
+	String name;
+	books(int a,String b){
+		id=a;
+		name=b;
+	}
+}
+
+class StoryBook extends books{
+	int price;
+	
+	StoryBook(int x,String y,int z){
+		super(x,y);
+		price=z;
+	}
+	
+	void display(){
+		System.out.println(id);
+		System.out.println(name);
+		System.out.println(price);
+	}
+}
+
+class U{
+	public static void main(String args[]){
+		
+		StoryBook c=new StoryBook(1,"Maths",350);
+		c.display();
+		
+		
+	}
+}
+				</pre>
+			</td>
+		
+		</tr>
+		</table>
+
+		<br><br><br>
+		<h3>Output</h3><br><br>
+		
+		<img src="image/U.jpg" >
+		
+		
+		
+	</body>
+
+</html>

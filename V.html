@@ -1,0 +1,58 @@
+<html>
+	<head>
+	</head>
+
+	<body bgcolor="#CCFFFF">
+	
+		<table border="4" bordercolor="black" bgcolor="33FFCC">
+		<tr>
+			<td>
+				<pre>
+// Method overriding. 
+
+	class A1 { 
+		int i, j; 
+		A1(int a, int b) { 
+		i = a; 
+		j = b; 
+	}
+		// display i and j 
+	void show() { 
+	System.out.println("i and j: " + i + " " + j); 
+	}
+	}
+	
+	class B extends A1 { 
+	int k;
+	B(int a, int b, int c) { 
+	super(a, b);
+	k = c; 
+	// display k – this overrides show() in A 
+	
+	void show() { 
+	System.out.println("k: " + k); 
+	}
+	}
+	}
+		class A { 
+		public static void main(String args[]) { 
+		B subOb = new B(1, 2, 3);
+		subOb.show(); // this calls show() in B
+		} 
+} 
+				</pre>
+			</td>
+		
+		</tr>
+		</table>
+
+		<br><br><br>
+		<h3>Output</h3><br><br>
+		
+		<img src="image/V.jpg" >
+		
+		
+		
+	</body>
+
+</html>
